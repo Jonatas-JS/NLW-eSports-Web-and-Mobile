@@ -1,22 +1,9 @@
 // JSX: JavaScript + XML (HTML)
-interface ButtonProps {
-  title: string;
-}
-
-function Button(props: ButtonProps) {
-  return (
-    <button>
-      {props.title}
-    </button>
-  )
-}
+import './styles/main.css';
 
 function App() {
   return (
-    <div>
-      <Button title="Enviar"/>
-      <Button title="Excluir"/>
-      <Button title="Cancelar"/>
+    <div className="w-8 h-8 bg-black dark:bg-slate-500">
     </div>
   )
 }
