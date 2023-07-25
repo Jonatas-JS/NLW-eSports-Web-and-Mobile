@@ -1,6 +1,24 @@
 // JSX: JavaScript + XML (HTML)
+interface ButtonProps {
+  title: string;
+}
+
+function Button(props: ButtonProps) {
+  return (
+    <button>
+      {props.title}
+    </button>
+  )
+}
+
 function App() {
-  return <h1>Hello Word</h1>
+  return (
+    <div>
+      <Button title="Enviar"/>
+      <Button title="Excluir"/>
+      <Button title="Cancelar"/>
+    </div>
+  )
 }
 
 export default App
