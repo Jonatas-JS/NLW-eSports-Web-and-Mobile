@@ -1,10 +1,11 @@
-import React from 'react';
 import { View, Image } from 'react-native';
 
 import logoImg from '../../assets/logo-nlw-esports.png';
 
 import { styles } from './styles';
 import { Heading } from '../../components/Heading';
+import { GAMES } from '../../utils/games';
+import { GameCard } from '../../components/GameCard';
 
 export function Home() {
   return (
@@ -18,6 +19,11 @@ export function Home() {
         title="Encontre seu duo!"
         subtitle="Selecione o game que deseja jogar..."
       />
+
+      <GameCard 
+        data={GAMES[0]}
+      />
+
     </View>
   );
 }
